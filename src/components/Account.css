@@ -1,0 +1,316 @@
+.account-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  min-height: 600px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.account-sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 30px 20px;
+  border-right: 1px solid #eee;
+  }
+  
+.account-sidebar h2 {
+  color: #333;
+    font-size: 24px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+}
+
+.account-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.account-sidebar button:hover {
+  background-color: #f0f0f0;
+    color: #333;
+  }
+  
+.account-sidebar button.active {
+  background-color: #333;
+  color: white;
+}
+
+.account-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.account-content h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Orders Section */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-status {
+  font-weight: 600;
+}
+
+.order-status span {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.order-status span.processing {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.order-status span.shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.order-status span.delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+    gap: 15px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-details h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.item-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.order-summary {
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  }
+  
+.order-summary p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Address Section */
+.address-section form,
+.profile-section form {
+  max-width: 500px;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+    border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #222;
+  transform: translateY(-1px);
+  }
+  
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+    font-size: 18px;
+  }
+  
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+}
+
+.contact-section h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  }
+  
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-item p {
+  color: #666;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.contact-item form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-item button[type="submit"] {
+  background-color: #333;
+    color: white;
+    border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+    cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  }
+  
+.contact-item button[type="submit"]:hover {
+  background-color: #222;
+  transform: translateY(-1px);
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+  .account-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .account-sidebar {
+    width: 100%;
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .account-content {
+    padding: 20px;
+  }
+
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 15px;
+  }
+  }
+  

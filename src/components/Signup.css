@@ -1,0 +1,91 @@
+.signup-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Blur for glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signup-container:hover {
+    
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.radio-group {
+    margin: 10px 0;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.google-signup {
+    background: rgba(219, 68, 55, 0.8);
+    color: white;
+}
+
+.google-signup:hover {
+    background: rgba(219, 68, 55, 1);
+}
+
+.google-signup:active {
+    background: rgba(200, 55, 44, 1);
+}
+
+/* Glassy placeholder effect */
+input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Light background color */
+body {
+    background: #ededf3;
+}

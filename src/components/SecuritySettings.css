@@ -1,0 +1,71 @@
+.security-settings-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2); /* Light glass effect */
+    backdrop-filter: blur(12px); /* Stronger blur */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .security-settings-container:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Input Field Styles */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #5e5454; /* White label for better contrast */
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Visible border */
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3); /* Light background */
+    color: black; /* Dark text for visibility */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-group input::placeholder {
+    color: rgba(0, 0, 0, 0.6); /* Darker placeholder text */
+  }
+  
+  .input-group input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Button Styles */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #a7283f, #f7588f);
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #213688, #1c2874);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+  }
+  
